@@ -16,7 +16,7 @@ class App extends BaseConfig
      *
      * E.g., http://example.com/
      */
-    public $baseURL = 'http://localhost:8888/projectSearchEngine/public';
+    public $baseURL = 'http://localhost:8888/nusantarank/public';
 
     /**
      * Allowed Hostnames in the Site URL other than the hostname in the baseURL.
