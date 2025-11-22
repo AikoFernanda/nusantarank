@@ -1,0 +1,147 @@
+/* style.css versi terbaik: responsive, clean, dengan dark mode toggle */
+:root {
+  --bg-light: #f8f9fa;
+  --bg-dark: #1e1e1e;
+  --text-light: #333;
+  --text-dark: #eee;
+  --primary: #0066cc;
+  --primary-hover: #004999;
+  --card-light: #fff;
+  --card-dark: #2c2c2c;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  padding: 20px;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+
+.dark-mode {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+input[type="text"] {
+  flex: 1;
+  min-width: 250px;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--primary-hover);
+}
+
+.results {
+  list-style: none;
+  padding: 0;
+}
+
+.results li {
+  background-color: var(--card-light);
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px var(--shadow);
+  transition: background-color 0.3s;
+}
+
+.dark-mode .results li {
+  background-color: var(--card-dark);
+}
+
+.results li a {
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.results li a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #777;
+}
+
+mark {
+  background-color: yellow;
+  color: black;
+  padding: 0 4px;
+  border-radius: 3px;
+}
+
+/* Dark mode toggle button */
+#darkToggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 1000;
+}
+
+/* Logo UM */
+.logo {
+  display: block;
+  margin: 0 auto 20px auto;
+  max-width: 100px;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  input[type="text"] {
+    width: 100%;
+  }
+  button {
+    width: 100%;
+  }
+}
+
+/* Dark mode class for button */
+.dark-mode #darkToggle {
+  background-color: #ddd;
+  color: #111;
+}
