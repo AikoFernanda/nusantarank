@@ -45,7 +45,7 @@ C. Setup CodeIgniter 4 (CI4)
 1. Memicu Perhitungan PageRank (Wajib)
 - Skor PageRank harus dihitung ulang setiap kali data di links_graph berubah.
 - Akses rute trigger ini di browser Anda:
-    http://localhost:8888/projectSearchEngine/public/index.php/admin/triggerPagerank/RAHASIA
+    http://localhost:8888/nusantarank/public/index.php/admin/triggerPagerank/RAHASIA
 - Verifikasi: Cek log Terminal Python (akan muncul pesan Konvergen di iterasi ke-XX). Kolom skor_pagerank di DB akan terisi.
 
 2. Fitur Pencarian dan Filter

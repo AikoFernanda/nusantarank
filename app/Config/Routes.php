@@ -12,3 +12,6 @@ $routes->post('search/results', 'Search::results');
 // Perlu diingat, rute ini tidak aman untuk produksi karena tidak ada otentikasi.
 // Ganti 'RAHASIA' dengan kata kunci yang sulit ditebak.
 $routes->get('admin/triggerPagerank/RAHASIA', 'Search::runPagerankEngine');
+
+// Rute untuk API Graf
+$routes->get('api/graph/links/(:num)', 'Graph::links/$1');
